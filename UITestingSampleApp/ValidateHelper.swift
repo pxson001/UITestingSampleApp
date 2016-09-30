@@ -8,19 +8,18 @@
 
 import Foundation
 
-
 class ValidateHelper {
     
     static let username = "a"
     static let password = "1"
-    
-    
+
+
     static func validateEmptyTextField(text: String) -> Bool{
         return text.isEmpty
     }
-    
-    static func validateUsernameAndPasswordMatch(user: String, pass: String) -> Bool {
-        if user == username && pass == password{
+
+    static func validateUsernameAndPasswordMatch(user: String, pass: String) -> Bool{
+        if username == user && password == pass{
             return true
         }
         return false

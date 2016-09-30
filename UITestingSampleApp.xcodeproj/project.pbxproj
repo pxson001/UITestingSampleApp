@@ -14,7 +14,7 @@
 		CC6236861D8BEE1C00C98E75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6236851D8BEE1C00C98E75 /* Assets.xcassets */; };
 		CC6236891D8BEE1C00C98E75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6236871D8BEE1C00C98E75 /* LaunchScreen.storyboard */; };
 		CC6236971D8BF4CB00C98E75 /* UITestingSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6236961D8BF4CB00C98E75 /* UITestingSampleAppUITests.swift */; };
-		CC62369F1D8BF7E200C98E75 /* ValidateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62369E1D8BF7E200C98E75 /* ValidateHelper.swift */; };
+		CCE3C0CB1D9E1F3400565458 /* ValidateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE3C0CA1D9E1F3400565458 /* ValidateHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		CC6236941D8BF4CB00C98E75 /* UITestingSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestingSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6236961D8BF4CB00C98E75 /* UITestingSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingSampleAppUITests.swift; sourceTree = "<group>"; };
 		CC6236981D8BF4CB00C98E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC62369E1D8BF7E200C98E75 /* ValidateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidateHelper.swift; path = ../../ValidateHelper.swift; sourceTree = "<group>"; };
+		CCE3C0CA1D9E1F3400565458 /* ValidateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 				CC6236851D8BEE1C00C98E75 /* Assets.xcassets */,
 				CC6236871D8BEE1C00C98E75 /* LaunchScreen.storyboard */,
 				CC62368A1D8BEE1C00C98E75 /* Info.plist */,
-				CC62369E1D8BF7E200C98E75 /* ValidateHelper.swift */,
+				CCE3C0CA1D9E1F3400565458 /* ValidateHelper.swift */,
 				CC2D19751D8F8E5000FC47AA /* MainViewController.swift */,
 			);
 			path = UITestingSampleApp;
@@ -203,7 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC62369F1D8BF7E200C98E75 /* ValidateHelper.swift in Sources */,
+				CCE3C0CB1D9E1F3400565458 /* ValidateHelper.swift in Sources */,
 				CC6236811D8BEE1B00C98E75 /* ViewController.swift in Sources */,
 				CC62367F1D8BEE1B00C98E75 /* AppDelegate.swift in Sources */,
 				CC2D19761D8F8E5000FC47AA /* MainViewController.swift in Sources */,
