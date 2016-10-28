@@ -63,6 +63,7 @@
 		CC6236721D8BEE1A00C98E75 = {
 			isa = PBXGroup;
 			children = (
+				CC8581A91DC2F10A00DA212E /* New Group */,
 				CC62367D1D8BEE1B00C98E75 /* UITestingSampleApp */,
 				CC6236951D8BF4CB00C98E75 /* UITestingSampleAppUITests */,
 				CC62367C1D8BEE1A00C98E75 /* Products */,
@@ -97,9 +98,24 @@
 			isa = PBXGroup;
 			children = (
 				CC6236961D8BF4CB00C98E75 /* UITestingSampleAppUITests.swift */,
+				CC8581A81DC2F0D100DA212E /* New Group */,
 				CC6236981D8BF4CB00C98E75 /* Info.plist */,
 			);
 			path = UITestingSampleAppUITests;
+			sourceTree = "<group>";
+		};
+		CC8581A81DC2F0D100DA212E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		CC8581A91DC2F10A00DA212E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +355,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fruitful.UITestingSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -350,6 +367,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fruitful.UITestingSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -360,6 +378,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fruitful.UITestingSampleAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = UITestingSampleApp;
 			};
 			name = Debug;
@@ -371,6 +390,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fruitful.UITestingSampleAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = UITestingSampleApp;
 			};
 			name = Release;

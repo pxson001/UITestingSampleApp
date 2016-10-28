@@ -38,7 +38,6 @@ class ViewController: UIViewController {
         }
         
         if ValidateHelper.validateUsernameAndPasswordMatch(usernameTextField.text!, pass: passwordTextField.text!){
-//            showAlert("Oops", message: "Matched")
             self.performSegueWithIdentifier("loginSegue", sender: self)
         } else {
             showAlert("Oops", message: "Not matched")

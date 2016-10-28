@@ -9,6 +9,8 @@
 import XCTest
 
 class UITestingSampleAppUITests: XCTestCase {
+    
+    let TIMEOUT = NSTimeInterval(60)
         
     override func setUp() {
         super.setUp()
@@ -39,9 +41,8 @@ class UITestingSampleAppUITests: XCTestCase {
         let alert = app.alerts.staticTexts["Empty username"]
         let predicate = NSPredicate(format: "exists = true")
         expectationForPredicate(predicate, evaluatedWithObject: alert, handler: nil)
-        waitForExpectationsWithTimeout(5, handler: nil)
+        waitForExpectationsWithTimeout(TIMEOUT, handler: nil)
         XCTAssertTrue(alert.exists)
-        print("=============\(app.debugDescription)")
     }
     
     func testEmptyPassword() {
@@ -58,26 +59,9 @@ class UITestingSampleAppUITests: XCTestCase {
         let alert = app.alerts.staticTexts["Empty password"]
         let predicate = NSPredicate(format: "exists = true")
         expectationForPredicate(predicate, evaluatedWithObject: alert, handler: nil)
-        waitForExpectationsWithTimeout(5, handler: nil)
+        waitForExpectationsWithTimeout(TIMEOUT, handler: nil)
     }
 
-    func testUsernameAndPasswordMatched() {
-        
-        let app = XCUIApplication()
-        let usernameTextField = app.textFields["username"]
-        tapElementAndWaitForKeyboardToAppear(usernameTextField)
-        usernameTextField.typeText("a")
-        
-        let passwordSecureTextField = app.secureTextFields["password"]
-        tapElementAndWaitForKeyboardToAppear(passwordSecureTextField)
-        passwordSecureTextField.typeText("1")
-        app.buttons["Log in"].tap()
-        
-        let alert = app.alerts.staticTexts["Matched"]
-        let predicate = NSPredicate(format: "exists = true")
-        expectationForPredicate(predicate, evaluatedWithObject: alert, handler: nil)
-        waitForExpectationsWithTimeout(5, handler: nil)
-    }
     
     func testUsernameAndPasswordNotMached() {
         
@@ -94,10 +78,10 @@ class UITestingSampleAppUITests: XCTestCase {
         let alert = app.alerts.staticTexts["Not matched"]
         let predicate = NSPredicate(format: "exists = true")
         expectationForPredicate(predicate, evaluatedWithObject: alert, handler: nil)
-        waitForExpectationsWithTimeout(5, handler: nil)
+        waitForExpectationsWithTimeout(TIMEOUT, handler: nil)
     }
     
-    func testSwitchFromLoginToMainScreen() {
+    func testUsernameAndPasswordMatched() {
         
         let app = XCUIApplication()
         let usernameTextField = app.descendantsMatchingType(.TextField).matchingIdentifier("username").element
@@ -107,13 +91,13 @@ class UITestingSampleAppUITests: XCTestCase {
         let passwordSecureTextField = app.secureTextFields["password"]
         tapElementAndWaitForKeyboardToAppear(passwordSecureTextField)
         passwordSecureTextField.typeText("1")
-        app.descendantsMatchingType(.Button).matchingIdentifier("Log in").element.tap()
+        app.buttons["Log in"].tap()
         
         
         let label = app.staticTexts["Main Screen"]
         let predicate = NSPredicate(format: "exists = true")
         expectationForPredicate(predicate, evaluatedWithObject: label, handler: nil)
-        waitForExpectationsWithTimeout(5, handler: nil)
+        waitForExpectationsWithTimeout(TIMEOUT, handler: nil)
     }
 }
 
